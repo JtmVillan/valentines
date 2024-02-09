@@ -38,14 +38,14 @@ export default function Home() {
       <div className="flex flex-col items-center justify-center h-screen">
       {yesPressed ? (
           <>
-          <div className="flex flex-col gap-16 justify-center items-center">
+          <div className="flex flex-col gap-16 justify-center items-center px-16">
             <Image 
               src="/Heart Kirby No Background.webp" 
               alt="Happy Kirby" 
               height={300}
               width={200}
             />
-            <div className="uppercase font-bold text-8xl">hooray!</div>
+            <div className="uppercase font-bold text-7xl">hooray!</div>
           </div>
             
           </>
@@ -59,11 +59,11 @@ export default function Home() {
                 width={200}
               />
 
-              <div className="text-6xl font-medium">
+              <div className="text-5xl font-medium text-center">
                 Will you be my Valentine?
               </div>
 
-              <div className="mt-16 flex flex-row gap-16 items-center">
+              <div className="mt-16 flex flex-col gap-8 items-center">
                 <button
                   className="btn-yes-style"
                   onClick={() => setYesPressed(true)}
